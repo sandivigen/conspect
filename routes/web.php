@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/laravel2', function () {
     return view('laravel2');
 });
+
+Route::get('/laravel3', function () {
+    return view('laravel3');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
